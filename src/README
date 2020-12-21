@@ -1,0 +1,31 @@
+# Designing Flows
+
+1. Specify the project requirements:
+    - Device
+    - Frequency
+    - etc
+
+2. Design the system behavior:
+    - how the program runs
+    - how the microcontroller interacts with the 'inside' & 'outside' peripherals
+    - etc
+
+3. Create Schematic (Proteus)
+
+4. Write Program
+
+5. Build the program
+    - make compile      -> compile main.c
+    - make hex          -> transform main.elf to main.hex (.text & .data only)
+                           if fuse programming is needed, add flag: '-j .fuse'
+    - make trace        -> for debugging in simavr & avr-gdb (for timing
+                           critical situations)
+
+5. For simple simulation & direct interaction with components, use Proteus
+    - make sure all the components all
+
+6. If design passes all requirements, proceed to upload to microcontroller
+
+7. Bug? go to make trace
+
+8. Repeat

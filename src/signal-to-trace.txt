@@ -1,0 +1,15 @@
+# trace interrupt vector access -------------------
+# Compare match A -> vector @ 0x006
+# Compare match B -> vector @ 0x007
++ IRQ.VECTOR6
++ IRQ.VECTOR7
+
+# trace counter value -----------------------------
++ TIMER1.Counter
+
+# trace PORTD -------------------------------------
++ PORTD.DDR
++ PORTD.D0-Out
++ PORTD.D1-Out
++ PORTD.D2-Out
++ PORTD.D3-Out
