@@ -15,17 +15,14 @@
 4. Write Program
 
 5. Build the program
-    - make compile      -> compile main.c
-    - make hex          -> transform main.elf to main.hex (.text & .data only)
-                           if fuse programming is needed, add flag: '-j .fuse'
-    - make trace        -> for debugging in simavr & avr-gdb (for timing
-                           critical situations)
+    - make compile          -> compile main.c
+    - make hex              -> transform main.elf to main.hex (.text & .data only)
+                               if fuse programming is needed, add flag: '-j .fuse'
+    - make get-tracing-list -> for debugging in simulavr & avr-gdb (for timing
+                               critical situations)
+    - make get-signal       -> simulate simulavr with input signal we want to trace
 
 5. For simple simulation & direct interaction with components, use Proteus
-    - make sure all the components all
+    - make sure all the components are available to simulate
 
 6. If design passes all requirements, proceed to upload to microcontroller
-
-7. Bug? go to make trace
-
-8. Repeat
