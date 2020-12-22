@@ -5,7 +5,7 @@ OBJCOPY		= avr-objcopy
 SIMULATOR	= /home/yeyee/bin/simulavr/src/simulavr
 INCLUDE_FILES	= -I./ -I/home/yeyee/bin/simulavr/src/
 COMPILE_FLAGS	= -Wall -g -Os -mmcu=${MCU} -DF_CPU=${F_CPU}UL ${INCLUDE_FILES} \
-				  -Wl,--section-start=.siminfo=0x900000 #for simulavr
+		  # -Wl,--section-start=.siminfo=0x900000 #for simulavr
 
 TARGET		= main
 SOURCE_FILE	= main.c
